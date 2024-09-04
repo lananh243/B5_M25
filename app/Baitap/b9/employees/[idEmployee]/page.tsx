@@ -39,7 +39,7 @@ export default function Details(props: any) {
       <h3>Chi tiết nhân viên</h3>
       {employeeFilter.map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <p>Id : {item.id}</p>
             <p>Name : {item.name}</p>
             <p>Age : {item.age}</p>

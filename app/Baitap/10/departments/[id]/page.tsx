@@ -15,7 +15,7 @@ export default function IdDepartment(props: any) {
     <div>
       {departmentFilter.map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <p>Department Id : {item.id}</p>
             <p>Department Name : {item.name}</p>
           </div>
