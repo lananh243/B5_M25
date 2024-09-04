@@ -10,9 +10,9 @@ export default function Department() {
   return (
     <div>
       <h2>List Departments</h2>
-      {departments.map((item, index) => {
+      {departments.map((item) => {
         return (
-          <ul key={index}>
+          <ul key={item.id}>
             <li>{item.name}</li>
           </ul>
         );

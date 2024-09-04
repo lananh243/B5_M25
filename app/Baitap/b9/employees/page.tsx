@@ -23,9 +23,9 @@ export default function Employee() {
     <div>
       <h1>Bài 9 :</h1>
       <h2>Danh sách nhân viên</h2>
-      {employee.map((item, index) => {
+      {employee.map((item) => {
         return (
-          <ul key={index}>
+          <ul key={item.id}>
             <li>Id : {item.id}</li>
             <p>Name : {item.name}</p>
             <p>Age : {item.age}</p>
